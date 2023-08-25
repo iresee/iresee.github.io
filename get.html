@@ -1,0 +1,11 @@
+<html><meta charset=utf-8><body><h1>Error</h1><p>Please set the <code>refresh_token</code> in environments<br>
+    <a href="" id="a1">Get a refresh_token</a>
+    <br><code>allow javascript</code>
+    <script>
+        url=window.location.href;
+        if (url.substr(-1)!="/") url+="/";
+        url="https://login.partner.microsoftonline.cn/common/oauth2/v2.0/authorize?scope=https%3A%2F%2Fmicrosoftgraph.chinacloudapi.cn%2FFiles.ReadWrite.All+offline_access&response_type=code&client_id=04c3ca0b-8d07-4773-85ad-98b037d25631&redirect_uri=https://scfonedrive.github.io&state="+encodeURIComponent(url);
+        document.getElementById('a1').href=url;
+        //window.open(url,"_blank");
+    </script>
+    </p></body></html>
